@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let math = +prompt("Nhập điểm Toán");
+        let physic = +prompt("Nhập điểm Lý");
+        let chemis = +prompt("Nhập điểm Hóa");
+        let literature = +prompt("Nhập điểm Văn");
+        let history = +prompt("Nhập điểm Sử");
+        let geography = +prompt("Nhập điểm Địa");
+        let tb = (math+physic+chemis+literature+history+geography)/6
+        if (8.0<=tb&&tb<=10) {
+            alert ("Bạn xếp loại giỏi")
+        } else if (6.5<=tb&&tb<=7.9) {
+            alert ("Bạn xếp loại khá")
+        } else if (5.0<=tb&&tb<=6.4) {
+            alert ("Bạn xếp loại trun bình")
+        } else if (tb<5.0) {
+            alert ("Bạn xếp loại yếu")
+        } else {
+            alert ("Mời bạn nhập lại")
+        }
+    </script>
+</body>
+</html>
